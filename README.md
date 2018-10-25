@@ -26,6 +26,14 @@ Core APIs are subject to change. We encourage people to try this library out and
 3. In Xcode, in the project navigator, select your project. Add `libMSREventBridge.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
+#### iOS using CocoaPods
+
+You can use CocoaPods to manage your native (Swift and Objective-C) dependencies:
+
+1. Add MSREventBridge to your Podfile
+
+`pod 'MSREventBridge', :path => '../node_modules/react-native-event-bridge'`
+
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
@@ -130,7 +138,7 @@ public class MainActivity extends ReactActivity implements MSREventBridgeEventRe
     // Handle event with callback
     // ...
   }
-  
+
   // ...
 }
 ```
