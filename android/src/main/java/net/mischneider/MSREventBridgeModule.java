@@ -20,6 +20,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.facebook.react.uimanager.NativeViewHierarchyManager;
 import com.facebook.react.uimanager.RootView;
@@ -32,6 +33,7 @@ import java.util.Map;
 /**
  * Module that handles receiving and sending events from and to React Native
  */
+@ReactModule(name = "MSREventBridge")
 public class MSREventBridgeModule extends ReactContextBaseJavaModule implements MSREventBridgeEventEmitter {
 
   // Static Identifier for events that are sent to React Native. These needs to be in sync with iOS!
